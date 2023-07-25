@@ -1,7 +1,6 @@
 
-import { Model, Table, PrimaryKey, Column, ForeignKey, BelongsTo } from "sequelize-typescript";
-import CustomerModel from "./CustomerModel";
-import Customer from "../../../../domain/entity/Customer";
+import { Model, Table, PrimaryKey, Column, ForeignKey, BelongsTo, AutoIncrement } from "sequelize-typescript";
+
 import ProductModel from "./ProductModel";
 import OrderModel from "./OrderModel";
 
@@ -37,5 +36,5 @@ export default class OrderItemModel extends Model {
 
     @Column({allowNull:false})
     declare price:number;
-    
+   
 }

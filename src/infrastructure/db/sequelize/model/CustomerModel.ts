@@ -1,4 +1,3 @@
-
 import { Model, Table, PrimaryKey, Column } from "sequelize-typescript";
 
 @Table({

@@ -1,7 +1,9 @@
+import { Order } from "sequelize";
 import Address from "../../domain/entity/Address";
 import Customer from "../../domain/entity/Customer";
 import ICustomerRepository from "../../domain/repository/ICostumerRepository";
 import CustomerModel from "../db/sequelize/model/CustomerModel";
+import OrderModel from "../db/sequelize/model/OrderModel";
 
 export default class ProductRepository implements ICustomerRepository {
 
@@ -78,5 +80,7 @@ export default class ProductRepository implements ICustomerRepository {
             return customer;
         })
     }
+
+
 
 }
